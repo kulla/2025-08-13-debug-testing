@@ -71,6 +71,7 @@ export default function App() {
               <ContentEditable className="outline-none min-h-[80px]" />
             }
             placeholder={<Placeholder />}
+            ErrorBoundary={() => <div>Error loading editor</div>}
           />
           <HistoryPlugin />
           <OnChangePlugin onChange={() => {}} />
